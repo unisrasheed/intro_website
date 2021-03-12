@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function light(value){
+            var pic;
+            if(value==1)
+            {
+                pic="off.png"
+            }
+            else{
+                pic="on.png"
+            }
+            document.getElementById('bulb').src=pic
+        }
+        </script>
+        <style>
+            button{
+                color: red;
+                background: white;
+            }
+        </style>
+</head>
+<body>
+   
+   <!-- <p><img src="C:\Users\younis\Desktop\html_project\on.png"></p> -->
+    <p>  <img id= 'bulb' src='off.png'></p>
+    <button  onclick="light(0)">Turn On</button>
+   <button onclick="light(1)">Turn Off</button>
+</body>
+</html>
